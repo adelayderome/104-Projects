@@ -2,4 +2,4 @@
 
 - **Name**: Adelayde Rome
 - **Email**: adelaydr@usc.edu
-All individually completed projects for CSCI104 at USC.
+- All individually completed projects for CSCI104 at USC.
