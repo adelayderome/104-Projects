@@ -1,1 +1,1 @@
-all problems in respective files as specified by assignment 
+Homework prompt: http://bits.usc.edu/cs104/assignments/hw7.html
