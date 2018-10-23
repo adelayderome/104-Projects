@@ -1,0 +1,30 @@
+Problem 1c
+	array: [0.0, 8.0, 3.0, 7.0, 5.0, 4.0, 6.0, 2.0, 9.0, 1.0]
+	the first pivot would be 1 (2nd smallest in array). 
+	list: 01 [8, 3, 7, 5, 4, 6, 2, 9]
+	pivot: 8 (2nd largest)
+	list: 01 [3, 7, 5, 4, 6, 2] 89
+	pivot: 3 (2nd smallest)
+	list: 01 23 [7, 5, 4, 6] 89
+	pivot: 6 (2nd largest)
+	list: 0123 [5, 4] 67 89
+	pivot: 4 (either really--only two numbers)
+	lis sorted, each pivot was the secon smallest or largest in the sublist
+
+Problem 2
+	(For interpolation search-assuming that the array is sorted)
+	For an array of size n of doubles where the last element (at n-1) is 
+	the largest number in the range, and the element at n-2 is the second 
+	smallest element in the range and in the array (this will be the 
+	target), and every element before (from 0 to n-3) is the smallest 
+	element in the range, interpolation search will query every entry of 
+	the array before finding the target. The first and last element of the 
+	array are queried when the search begins, to find the range, and then 
+	the index that the algorithm will query will be index 1 in the array (
+	or 0 depending how small the target is). After this index is queried 
+	and it does not have the target value, the next index will be queried 
+	because the double at index 1 (or 0) will be smaller than the target, 
+	and this will continue until every index in the array is queried and 
+	the target is found at index n-2. 
+	example: 10 doubles range 0 to 1, target .1
+	{0, 0, 0, 0, 0, 0, 0, 0, .1, 1}

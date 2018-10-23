@@ -1,0 +1,58 @@
+Problem 1.
+	a) README.md is unmodified and in the SampleRepo folder and repository
+	b) README.md is modified and not yet staged. fun_porblem.txt is 
+	untracked.  
+	c) README.md and fun_problem.txt are staged and not yet committed. 
+	d) README.md and fun_problem.txt were committed and unmodified, but 
+	were then edited and currently are modified and not yet staged. 
+	e) README.md is staged and not yet committed. fun_problem.txt is 
+	unmodified because of the git checkout -- command, the file is restored
+	to the last committed version. fun_problem.txt is an empty file, 
+	because that was the last commit before the modifications. 
+	f) README.md has two different statuses. One version of the file is 
+	staged and not yet committed, because of the previous call to git add, 
+	and does not say "Fancy git move. " The other version of the file is 
+	modified and not yet staged, because of the addition of "Fancy git 
+	move" to the end of the file. 
+
+Problem 3.
+	1) A map of items on the menu (string values) where each items key is the 
+	index corresponding to their number on the menu. This would make it easy 
+	and fast to access any item on the menu. Also, with a map an item can be 
+	added or removed, which is all that should need to be done to the menu 
+	items. 
+
+	2) A set of the movie titles (strings). A set would be sufficient here, 
+	because the data type only needs to hold the name of each movie, and the 
+	movie titles do not need to be ordered in any specific way, yet they can 
+	still be added/removed/accessed.
+
+	3) A map where the key value is the ISBN (integer) and the value is the 
+	book title (string). As explained with the menu items, books can be easily 
+	added, removed, and accessed. The books can be easily accessed by the ISBN 
+	in a map, but since the order doesnt matter, a list is not necessary. 
+
+	4) A map where the key value is the year (integer) and the value is an 
+	array (or some type of list) that contains all of the movie titles 
+	(strings) from the year represented by the integer key value. For this type 
+	of data storage, the specific movies do not need to be accessed from the 
+	array, simply the entire list of movies from the key year. Because each 
+	specific movie does not need to be accessed, an array would be an adequate 
+	data type for the map value.
+	
+	5) A list of structs which each contain the season number (integer) and an 
+	array of the episodes in each seasons (strings, each at the index 
+	corresponding to the episode number). The number of episodes in each season 
+	does not need to be changed and each episode title can be accessed in 
+	constant time based on the index.  
+
+Problem 4. 
+	The returned linked list will be the initial list in reversed 
+	order. r is returned int the end of funcA, and is a pointer to the last 
+	value in the linked list (value 5). The recursive call to funcB changes the 
+	pointers in the linked list, going through the recursive calls until p is 
+	the null pointer, and making each index of the linked list point to the one 
+	before it (1<-2<-3<-4<-5). After the call to funcB, l (the head value of 
+	the list called) is assigned to point to the null pointer, and since r has 
+	been created to have the pointers in l, but the reverse order of nodes, the 
+	list returned is the reverse of the initial list (in).

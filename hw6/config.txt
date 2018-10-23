@@ -1,0 +1,4 @@
+# my configuration file 
+INDEX_FILE = index.txt
+QUERY_FILE = query.txt
+OUTPUT_FILE = output.txt

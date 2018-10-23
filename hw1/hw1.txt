@@ -1,0 +1,48 @@
+Problem 1. 
+	a) 1, 4
+	b) 2, 3, 4
+	c) 4
+	d) 2
+	e) 2, 3, 4, 5
+
+Problem 2.
+	a) none
+	b) 1, 2, 3
+	c) 1. git add hw1q2b.cpp
+		  git commit -m "homework question 2b"
+		  git push
+	   2. git log -p -3
+	d) git would commit all three files, and they would be ready to be pushed to git
+	e) git clone git@github.com::usc-csci104-spring2018/hw-adelaydr.git
+
+Problem 4.  
+	1. when funcA([1,2,3,4,5], 5) is called, the output is:
+		1 
+		2
+		3
+		4
+		5
+	because funcB will be called on the array [1,2,3,4,5] with min 0 and
+	max 5 (array size), and this function then uses recursive calls to 
+	split up the array into the upper and lower half repeatedly, printing 
+	the value in the array at an index once the max and min are equal. The
+	recursive function will print each number in order and only once, 
+	because it begins by calling the min and max representing the first 
+	half of the array, followed by the second, and therefore reaches every
+	number in order. 
+	2. funcB will fail to terminate when the min is greater than the max. 
+	when the max is greater (or equal to) than the min , funcB will always 
+	terminate because the max and min will continue to be called 
+	recursively so that they will eventually be equal. 
+	3. output:
+		a[min]
+		a[1]
+		a[2]
+		a[3]
+		... (add one to index each time)
+		a[max-1]
+		a[max]
+	 as explained in question 1, the recursion will continue divding the 
+	 array until narrowed down to the same min and max value, and print the
+	 value at this index starting with the min and leading up to the max 
+	 in order
